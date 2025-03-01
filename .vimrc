@@ -12,6 +12,7 @@ set undofile
 set incsearch
 set noautoindent
 set nocindent
+set autochdir
 
 filetype plugin indent on
 set tabstop=4
@@ -44,6 +45,9 @@ Plug 'mbbil/undotree'
 Plug 'git@github.com:kien/ctrlp.vim.git'
 Plug 'https://github.com/gryf/wombat256grf'
 Plug 'sheerun/vim-polyglot'
+Plug 'valloric/youcompleteme'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
